@@ -119,18 +119,6 @@ fine_tuning.train()
 fine_tuning.model.save_pretrained(refined_model)
 
 
-# In[6]:
-
-
-fine_tuning.train()
-
-# Save Model
-fine_tuning.model.save_pretrained(refined_model)
-
-
-# In[21]:
-
-
 from peft import PeftModel, PeftConfig,PeftModelForCausalLM
 peft_model_id = "llama-2-7b-mlabonne-enhanced"
 config = PeftConfig.from_pretrained(peft_model_id)
